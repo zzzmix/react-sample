@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - npm install
-    - npm run build
+    - /opt/alt/alt-nodejs16/root/bin/npm install
+    - /opt/alt/alt-nodejs16/root/bin/npm run build
     - export DEPLOYPATH=/home/dqwbuokw/public_html/react-sample
     - /bin/cp -R build/* $DEPLOYPATH
