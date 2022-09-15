@@ -1,6 +1,8 @@
 ---
 deployment:
   tasks:
+    - /opt/alt/alt-nodejs16/root/bin/npm config set user 0 --prefix /home/dqwbuokw/repositories/react-sample
+    - /opt/alt/alt-nodejs16/root/bin/npm config set unsafe-perm true --prefix /home/dqwbuokw/repositories/react-sample
     - /opt/alt/alt-nodejs16/root/bin/npm install --prefix /home/dqwbuokw/repositories/react-sample
     - /opt/alt/alt-nodejs16/root/bin/npm run build --prefix /home/dqwbuokw/repositories/react-sample
     - export DEPLOYPATH=/home/dqwbuokw/public_html/react-sample
