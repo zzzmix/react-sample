@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - npm install
+    - npm run build
+    - export DEPLOYPATH=/home/dqwbuokw/public_html/react-sample
+    - /bin/cp -R build/* $DEPLOYPATH
